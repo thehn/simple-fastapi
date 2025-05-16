@@ -47,7 +47,7 @@ def test_update_item():
     response = client.put("/items/5", json=item_data)
     assert response.status_code == 200
     data = response.json()
-    assert data["message"] == "Item updated successfully"
+    assert data["message"] == "Item updated"
     assert data["item_id"] == 5
     assert data["item"]["name"] == "Updated Item"
 
