@@ -34,7 +34,7 @@ def create_item(item: Item):
 # PUT endpoint
 @app.put("/items/{item_id}")
 def update_item(item_id: int, item: Item):
-    return {"message": "Item updated successfully", "item_id": item_id, "item": item}
+    return {"message": "Item updated", "item_id": item_id, "item": item}
 
 
 # DELETE endpoint
